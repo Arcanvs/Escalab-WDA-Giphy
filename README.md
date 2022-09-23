@@ -1,5 +1,7 @@
 # Escalab: Giphy Explorer
 
+### Preview del sitio [Aquí](https://arcanvs.github.io/Escalab-WDA-Giphy/)
+
 ![Simple buscador de gif](./assets/img/simpleBuscadorGif.png)
 
 ## Objetivos
