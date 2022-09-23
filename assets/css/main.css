@@ -1,0 +1,110 @@
+@import 'https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap';
+body {
+	background-color: #F8EDEB;
+	text-align: center;
+	font-family: "Noto Sans", sans-serif;
+}
+
+.gif__main {
+	max-width: 1000px;
+	margin: auto;
+	padding: 10px;
+}
+.gif__main .gif__search {
+	display: flex;
+	justify-content: center;
+}
+.gif__main .gif__search .search__content {
+	width: 100%;
+	max-width: 400px;
+	height: 2.5rem;
+	background-color: #FCD5CE;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+.gif__main .gif__search .search__content input {
+	width: 100%;
+	font-size: 1.2rem;
+	padding: 10px 20px !important;
+	border: none;
+	border-radius: 10px 0px 0px 10px;
+	caret-color: #FCD5CE;
+	color: #3D3D3D;
+}
+.gif__main .gif__search .search__content input:focus-visible {
+  	outline: none !important;
+}
+.gif__main .gif__search .search__content button {
+	border: none;
+	border-radius: 0px 10px 10px 0px;
+	padding: 10px 20px;
+	font-size: 1rem;
+	color: #FFF !important;
+	background-color: #FFB5A7;
+}
+.gif__main .gif__search .search__content button:hover {
+  	cursor: pointer;
+}
+.gif__main .gif__ultimasBusquedas {
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+	margin: 1rem 0 1rem 0;
+}
+.gif__main .gif__ultimasBusquedas ul {
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+}
+.gif__main .gif__ultimasBusquedas ul li {
+	height: 2rem;
+	background-color: #FFB5A7;
+	color: #FFF;
+	border-radius: 5px;
+	font-size: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0px 10px 0px 10px;
+	margin: 5px;
+}
+.gif__main .gif__ultimasBusquedas ul li:hover {
+	cursor: pointer;
+	box-shadow: 0 5px 8px rgba(252, 213, 206, 0.9);
+}
+.gif__main .gif__results {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 10px;
+}
+.gif__main .gif__results .gif__container {
+	margin-bottom: 10px;
+	box-shadow: 0 5px 8px rgba(252, 213, 206, 0.9);
+	border-radius: 5px;
+	overflow: hidden;
+}
+.gif__main .gif__results .gif__container img {
+	width: 100%;
+	max-height: 250px;
+	object-fit: cover;
+	display: block;
+}
+@media (max-width: 500px) {
+	.gif__main .gif__results {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+@media (min-width: 500px) and (max-width: 700px) {
+	.gif__main .gif__results {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (min-width: 700px) and (max-width: 900px) {
+	.gif__main .gif__results {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
